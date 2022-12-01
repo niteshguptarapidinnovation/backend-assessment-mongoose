@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "c714c4b8-53cc-4837-a4b3-c4e4da37404c",
+		"name": "backend-assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19279759"
+	},
+	"item": [
+		{
+			"name": "Add Vehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"hyundai creta\",\n    \"type\":\"CAR\",\n    \"price\":100000000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/vehicle",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vehicle By ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"hyundai Venue 1\",\n    \"type\":\"CAR\",\n    \"price\":100000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/vehicle/6388754ddde960783c6d4c41",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"6388754ddde960783c6d4c41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Vehicle Within Two Days",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"hyundai Venue 1\",\n    \"type\":\"CAR\",\n    \"price\":100000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/vehicle/within-two-days",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"within-two-days"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/vehicle",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/vehicle/638865e5d136d80189506b5d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"638865e5d136d80189506b5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle Average price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/vehicle/car-average-price",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"car-average-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vehicle By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/vehicle/638864faf09a3d7d7724a721",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"638864faf09a3d7d7724a721"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
